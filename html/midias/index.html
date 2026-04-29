@@ -10,17 +10,18 @@
 <!-- Nesse exemplo, temos uma imagem, um vídeo, um áudio e um iframe. O elemento de vídeo e áudio possuem controles para reprodução, e o iframe exibe o conteúdo da página de contato. -->
 
     <img src="./docs/html.png" style="display: block;" />
-    tag
 
     <video controls style="width: 50%; border-radius: 10px;">
-        <source src="./video.mp4" type="video/mp4">
+        <source src="./docs/video5157144958053910112.mp4" type="video/mp4">
         Seu navegador não suporta o elemento de vídeo.
     </video>
 
-    <audio controls>
-        <source src="./audio.mp3" type="audio/mpeg">
+    <audio id="player">
+        <source src="./docs/Slash Solo _ November Rain(MP3_160K).mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
     </audio>
+
+    <!-- não subi os arquivos de audio e video devido ao peso -->
 
     <button onclick="document.getElementById('player').play()">Play</button>
     <button onclick="document.getElementById('player').pause()">Pause</button>
